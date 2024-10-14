@@ -46,24 +46,33 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <>
       <h1>Sedighe Ghanbary</h1>
-      <h1>25 + 5 Clock</h1>
-      <Controls
-        breakLength={breakLength}
-        sessionLength={sessionLength}
-        setBreakLength={setBreakLength}
-        setSessionLength={setSessionLength}
-        reset={reset}
-      />
-      <Timer
-        timeLeft={timeLeft}
-        isSession={isSession}
-        isRunning={isRunning}
-        setIsRunning={setIsRunning}
-      />
-      <audio id="beep" ref={audioRef} src="beep.mp3" />
-    </div>
+      <h2> sedighe.ghanbary@gmail.com</h2>
+      <h2>https://www.linkedin.com/in/sedighe-ghanbari/</h2>
+     
+
+
+      <div className="container">
+
+        <h1>25 + 5 Clock</h1>
+        <Controls
+          breakLength={breakLength}
+          sessionLength={sessionLength}
+          setBreakLength={setBreakLength}
+          setSessionLength={setSessionLength}
+          reset={reset}
+        />
+        <Timer
+          timeLeft={timeLeft}
+          isSession={isSession}
+          isRunning={isRunning}
+          setIsRunning={setIsRunning}
+        />
+        <audio id="beep" ref={audioRef} src="beep.mp3" />
+      </div>
+    </>
+
   );
 };
 
