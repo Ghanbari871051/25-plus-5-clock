@@ -32,7 +32,7 @@ const App = () => {
     } else {
       clearInterval(timerRef.current);
     }
-    
+
     return () => clearInterval(timerRef.current);
   }, [isRunning, breakLength, sessionLength, isSession]);
 
@@ -47,15 +47,16 @@ const App = () => {
 
   return (
     <div className="container">
+      <h1>Sedighe Ghanbary</h1>
       <h1>25 + 5 Clock</h1>
-      <Controls 
+      <Controls
         breakLength={breakLength}
         sessionLength={sessionLength}
         setBreakLength={setBreakLength}
         setSessionLength={setSessionLength}
         reset={reset}
       />
-      <Timer 
+      <Timer
         timeLeft={timeLeft}
         isSession={isSession}
         isRunning={isRunning}

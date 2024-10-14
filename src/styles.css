@@ -20,7 +20,7 @@ body {
     margin-bottom: 20px;
   }
   
-  .length-control {
+  .length-control  {
     display: flex;
     align-items: center;
     justify-content: center;
